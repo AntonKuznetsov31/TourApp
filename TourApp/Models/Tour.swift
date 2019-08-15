@@ -7,3 +7,20 @@
 //
 
 import UIKit
+
+struct Tour {
+    
+    let name : String
+    let country: String
+    let city: String
+    let price: Int
+    let food: FoodType
+}
+
+enum FoodType {
+    case ro
+    case bb
+    case hb
+    case ai
+    case uai
+}
