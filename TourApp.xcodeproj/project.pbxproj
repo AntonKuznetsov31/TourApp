@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA350B322305CEB000C22029 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA350B312305CEB000C22029 /* Tour.swift */; };
 		E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D72305C8E50043475A /* AppDelegate.swift */; };
 		E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D92305C8E50043475A /* ViewController.swift */; };
 		E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DB2305C8E50043475A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA350B312305CEB000C22029 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		E1BBB9D42305C8E50043475A /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BBB9D72305C8E50043475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BBB9D92305C8E50043475A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA350B302305CE2200C22029 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA350B312305CEB000C22029 /* Tour.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E1BBB9CB2305C8E50043475A = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		E1BBB9D62305C8E50043475A /* TourApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA350B302305CE2200C22029 /* Models */,
 				E1BBB9D72305C8E50043475A /* AppDelegate.swift */,
 				E1BBB9D92305C8E50043475A /* ViewController.swift */,
 				E1BBB9DB2305C8E50043475A /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
 				E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */,
 				E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */,
 			);
