@@ -90,7 +90,6 @@
 		DA350B382305D48E00C22029 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E141962C23071BB800F8E719 /* .gitignore */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -98,6 +97,7 @@
 		E1BBB9CB2305C8E50043475A = {
 			isa = PBXGroup;
 			children = (
+				E141962C23071BB800F8E719 /* .gitignore */,
 				E1BBB9D62305C8E50043475A /* TourApp */,
 				E1BBB9D52305C8E50043475A /* Products */,
 			);
