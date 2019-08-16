@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DA350B322305CEB000C22029 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA350B312305CEB000C22029 /* Tour.swift */; };
+		E141962D23071BB800F8E719 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E141962C23071BB800F8E719 /* .gitignore */; };
 		E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D72305C8E50043475A /* AppDelegate.swift */; };
 		E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D92305C8E50043475A /* ViewController.swift */; };
 		E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DB2305C8E50043475A /* Main.storyboard */; };
 		E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DE2305C8E70043475A /* Assets.xcassets */; };
 		E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */; };
+		E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C2E0532306F50400291DFF /* TourInformation.storyboard */; };
+		E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E055230700D400291DFF /* TourInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA350B312305CEB000C22029 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		E141962C23071BB800F8E719 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E1BBB9D42305C8E50043475A /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BBB9D72305C8E50043475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BBB9D92305C8E50043475A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E1BBB9DE2305C8E70043475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1BBB9E12305C8E70043475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1BBB9E32305C8E70043475A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C2E0532306F50400291DFF /* TourInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourInformation.storyboard; sourceTree = "<group>"; };
+		E1C2E055230700D400291DFF /* TourInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BBB9D92305C8E50043475A /* ViewController.swift */,
+				E1C2E055230700D400291DFF /* TourInformationViewController.swift */,
 			);
 			path = ViewConrollers;
 			sourceTree = "<group>";
@@ -56,8 +63,9 @@
 		DA350B342305D3FC00C22029 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				E1BBB9DB2305C8E50043475A /* Main.storyboard */,
 				E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */,
+				E1BBB9DB2305C8E50043475A /* Main.storyboard */,
+				E1C2E0532306F50400291DFF /* TourInformation.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -82,6 +90,7 @@
 		DA350B382305D48E00C22029 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E141962C23071BB800F8E719 /* .gitignore */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -173,7 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E141962D23071BB800F8E719 /* .gitignore in Resources */,
 				E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */,
+				E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */,
 				E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */,
 				E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */,
 			);
@@ -187,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
+				E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */,
 				E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */,
 				E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */,
 			);
@@ -336,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QYRHE66V7;
-				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TourApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QYRHE66V7;
-				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TourApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
