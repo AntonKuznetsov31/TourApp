@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QL7-uY-7BS">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,49 +19,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSH-dx-iIt">
-                                <rect key="frame" x="16" y="418.5" width="382" height="30"/>
+                                <rect key="frame" x="16" y="418.33333333333331" width="382" height="30"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A6-SH-Xir">
-                                <rect key="frame" x="16" y="456.5" width="382" height="30"/>
+                                <rect key="frame" x="16" y="456.33333333333331" width="382" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMl-Im-ScX">
-                                <rect key="frame" x="16" y="516.5" width="382" height="24"/>
+                                <rect key="frame" x="16" y="516.33333333333337" width="382" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-Tj-Rrt">
-                                <rect key="frame" x="16" y="780.5" width="73" height="42.5"/>
+                                <rect key="frame" x="16" y="780.66666666666663" width="73" height="42.333333333333371"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-ga-ApI">
-                                <rect key="frame" x="16" y="44" width="382" height="358.5"/>
+                                <rect key="frame" x="16" y="44" width="382" height="358.33333333333331"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N1X-wJ-Xzh">
-                                    <size key="itemSize" width="357" height="335"/>
+                                    <size key="itemSize" width="382" height="335"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tourImageCell" id="4SQ-9F-C8k">
-                                        <rect key="frame" x="0.0" y="12" width="357" height="335"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="11.666666666666666" width="382" height="335"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="357" height="335"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="335"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k94-QP-0Ah">
-                                                    <rect key="frame" x="0.0" y="41" width="347" height="284"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="335"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -69,10 +69,11 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsA-mV-xlZ">
-                                <rect key="frame" x="290" y="787" width="108" height="36"/>
+                                <rect key="frame" x="248" y="773" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.092616863548755646" green="0.63353657722473145" blue="0.097739614546298981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="xsA-mV-xlZ" secondAttribute="height" multiplier="3:1" id="XgJ-Rw-RpV"/>
+                                    <constraint firstAttribute="width" constant="150" id="CdO-Ya-PeW"/>
+                                    <constraint firstAttribute="height" constant="50" id="La8-56-GpC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Book">
@@ -107,10 +108,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="daM-Em-Izx"/>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="GSH-dx-iIt" id="oVf-mv-pIQ"/>
+                        <outlet property="collectionView" destination="XMa-ga-ApI" id="YOq-y2-Pkl"/>
+                        <outlet property="food" destination="tMl-Im-ScX" id="idm-af-RpF"/>
+                        <outlet property="hotel" destination="2A6-SH-Xir" id="ZOW-aE-NC5"/>
+                        <outlet property="price" destination="LZS-Tj-Rrt" id="PGs-MY-fpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJt-fP-fWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="155"/>
+            <point key="canvasLocation" x="-513.04347826086962" y="154.6875"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="Efq-sI-wBu">
@@ -118,7 +126,7 @@
                 <viewControllerPlaceholder id="3TC-ka-BMw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFm-Dg-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96" y="155"/>
+            <point key="canvasLocation" x="27" y="155"/>
         </scene>
     </scenes>
 </document>
