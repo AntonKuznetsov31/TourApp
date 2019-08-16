@@ -13,6 +13,8 @@
 		E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DB2305C8E50043475A /* Main.storyboard */; };
 		E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DE2305C8E70043475A /* Assets.xcassets */; };
 		E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */; };
+		E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C2E0532306F50400291DFF /* TourInformation.storyboard */; };
+		E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E055230700D400291DFF /* TourInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E1BBB9DE2305C8E70043475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1BBB9E12305C8E70043475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1BBB9E32305C8E70043475A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C2E0532306F50400291DFF /* TourInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourInformation.storyboard; sourceTree = "<group>"; };
+		E1C2E055230700D400291DFF /* TourInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BBB9D92305C8E50043475A /* ViewController.swift */,
+				E1C2E055230700D400291DFF /* TourInformationViewController.swift */,
 			);
 			path = ViewConrollers;
 			sourceTree = "<group>";
@@ -56,8 +61,9 @@
 		DA350B342305D3FC00C22029 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				E1BBB9DB2305C8E50043475A /* Main.storyboard */,
 				E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */,
+				E1BBB9DB2305C8E50043475A /* Main.storyboard */,
+				E1C2E0532306F50400291DFF /* TourInformation.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */,
+				E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */,
 				E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */,
 				E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */,
 			);
@@ -187,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
+				E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */,
 				E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */,
 				E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */,
 			);
@@ -336,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QYRHE66V7;
-				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TourApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QYRHE66V7;
-				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TourApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
