@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA350B322305CEB000C22029 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA350B312305CEB000C22029 /* Tour.swift */; };
+		E156F56223084E90003EFF53 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E156F56123084E90003EFF53 /* .gitignore */; };
 		E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D72305C8E50043475A /* AppDelegate.swift */; };
 		E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D92305C8E50043475A /* ViewController.swift */; };
 		E1BBB9DD2305C8E50043475A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DB2305C8E50043475A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		DA350B312305CEB000C22029 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		E156F56123084E90003EFF53 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E1BBB9D42305C8E50043475A /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BBB9D72305C8E50043475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BBB9D92305C8E50043475A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		E1BBB9CB2305C8E50043475A = {
 			isa = PBXGroup;
 			children = (
+				E156F56123084E90003EFF53 /* .gitignore */,
 				E1BBB9D62305C8E50043475A /* TourApp */,
 				E1BBB9D52305C8E50043475A /* Products */,
 			);
@@ -179,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E156F56223084E90003EFF53 /* .gitignore in Resources */,
 				E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */,
 				E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */,
 				E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */,
