@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bV-gg-HlL">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,15 +22,15 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeT-Ms-YS6" id="bBK-FK-D3y">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="149.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-bq-vsk">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="146.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="145.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-Od-MBn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="20.333333333333332"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2Mr-aS-m1J"/>
                                                     </constraints>
@@ -39,7 +39,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44U-hq-vfb">
-                                                    <rect key="frame" x="0.0" y="31.5" width="150" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="31.333333333333336" width="150" height="20.333333333333336"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="A0f-pW-33P"/>
                                                     </constraints>
@@ -48,7 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-ds-FsF">
-                                                    <rect key="frame" x="0.0" y="63" width="150" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="62.666666666666664" width="150" height="20.333333333333336"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="qXP-TY-c2i"/>
                                                     </constraints>
@@ -57,7 +57,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-ve-A3d">
-                                                    <rect key="frame" x="0.0" y="94.5" width="150" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="94" width="150" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="G68-xb-A1X"/>
                                                     </constraints>
@@ -66,7 +66,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMw-Pw-mr5">
-                                                    <rect key="frame" x="0.0" y="126" width="150" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="125.33333333333333" width="150" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="Uu7-ng-4L3"/>
                                                     </constraints>
@@ -76,11 +76,20 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paris1" translatesAutoresizingMaskIntoConstraints="NO" id="dzw-qb-ek6">
-                                            <rect key="frame" x="200" y="0.0" width="214" height="150"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paris1" translatesAutoresizingMaskIntoConstraints="NO" id="dzw-qb-ek6">
+                                            <rect key="frame" x="200" y="0.0" width="214" height="149.66666666666666"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="214" id="nVH-sZ-cYx"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dzw-qb-ek6" firstAttribute="top" secondItem="bBK-FK-D3y" secondAttribute="top" id="LFn-LG-Z1Z"/>
+                                        <constraint firstAttribute="bottom" secondItem="dzw-qb-ek6" secondAttribute="bottom" id="XVm-7a-x9c"/>
+                                        <constraint firstItem="dzw-qb-ek6" firstAttribute="top" secondItem="bBK-FK-D3y" secondAttribute="top" id="gau-lk-WDD"/>
+                                        <constraint firstAttribute="trailing" secondItem="dzw-qb-ek6" secondAttribute="trailing" id="i0J-5W-wrQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="dzw-qb-ek6" secondAttribute="trailing" id="koy-qK-4Tw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cityLabel" destination="44U-hq-vfb" id="A3U-QQ-jn1"/>
