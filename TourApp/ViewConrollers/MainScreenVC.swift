@@ -41,7 +41,7 @@ class MainScreenVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 150
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,6 +49,8 @@ class MainScreenVC: UITableViewController {
         
         let testHotel = Tour.init(name: "Paris Plaza", country: "France", city: "Paris", price: 1000 , food: .ai)
 
+        
+        
 //        cell.textLabel?.text = testHotel.name
 //        cell.detailTextLabel?.text = testHotel.country
 //        cell.imageView?.image = UIImage(named: "paris1")
