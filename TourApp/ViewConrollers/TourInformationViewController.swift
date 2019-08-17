@@ -10,10 +10,13 @@ import UIKit
 
 class TourInformationViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - IBOutlets
 
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var hotel: UILabel!
+    @IBOutlet weak var food: UILabel!
+    @IBOutlet weak var price: UILabel!
 
 }
+
