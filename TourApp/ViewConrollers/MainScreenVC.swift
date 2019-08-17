@@ -15,6 +15,7 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var foodLabel: UILabel!
+    @IBOutlet weak var imageImageView: UIImageView!
 }
 
 class MainScreenVC: UITableViewController {
@@ -40,14 +41,15 @@ class MainScreenVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hotelInfo", for: indexPath) as! MainTableViewCell
         
         
+        let tour = tours[indexPath.row]
         
-        let testHotel = Tour.init(name: "Paris Plaza", country: "France", city: "Paris", price: 1000 , food: .ai)
 
-        cell.nameLabel.text = testHotel.name
-        cell.cityLabel.text = testHotel.city
-        cell.countryLabel.text = testHotel.country
-        cell.priceLabel.text = String(testHotel.price)
-        cell.foodLabel.text = "AI"
+        cell.nameLabel.text = tour.name
+        cell.cityLabel.text = tour.city
+        cell.countryLabel.text = tour.country
+        cell.priceLabel.text = String(tour.price)
+        cell.foodLabel.text = tour.food
+        cell.imageImageView.image = UIImage.init(named: tour.image )
 
         return cell
     }

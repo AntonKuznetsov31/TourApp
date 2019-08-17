@@ -12,16 +12,14 @@ class MakeHotelsList {
    
     static let data = MakeHotelsList()
 
-
-
-
 func loadData() -> [Tour] {
     let tours = [
         Tour(name: "Anita ApartHotel 4*",
          country: "Greece",
          city: "Rodos",
          price: 84014,
-         food: .ro
+         food: "RO",
+         image: "AnitaApartHotel"
         )
     ]
     return tours

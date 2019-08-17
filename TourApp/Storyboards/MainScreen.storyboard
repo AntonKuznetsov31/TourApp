@@ -96,6 +96,7 @@
                                     <outlet property="cityLabel" destination="44U-hq-vfb" id="A3U-QQ-jn1"/>
                                     <outlet property="countryLabel" destination="lEf-ds-FsF" id="F62-0m-T5a"/>
                                     <outlet property="foodLabel" destination="CMw-Pw-mr5" id="oFF-Vp-0vM"/>
+                                    <outlet property="imageImageView" destination="dzw-qb-ek6" id="wXd-nB-X8H"/>
                                     <outlet property="nameLabel" destination="7HY-Od-MBn" id="Jc5-r9-o2y"/>
                                     <outlet property="priceLabel" destination="dgZ-ve-A3d" id="8s9-AT-PSM"/>
                                     <segue destination="2xr-rc-ZAg" kind="show" id="2VA-AG-uIE"/>

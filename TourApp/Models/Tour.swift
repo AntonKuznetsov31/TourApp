@@ -14,13 +14,6 @@ struct Tour {
     let country: String
     let city: String
     let price: Int
-    let food: FoodType
-}
-
-enum FoodType {
-    case ro
-    case bb
-    case hb
-    case ai
-    case uai
+    let food: String
+    let image: String
 }
