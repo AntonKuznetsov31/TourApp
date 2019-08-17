@@ -9,6 +9,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
@@ -20,6 +21,7 @@ class MainScreenVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,10 +47,17 @@ class MainScreenVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "hotelInfo", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "hotelInfo", for: indexPath) as! MainTableViewCell
+        
+        
         
         let testHotel = Tour.init(name: "Paris Plaza", country: "France", city: "Paris", price: 1000 , food: .ai)
 
+        cell.nameLabel.text = testHotel.name
+        cell.cityLabel.text = testHotel.city
+        cell.countryLabel.text = testHotel.country
+        cell.priceLabel.text = String(testHotel.price)
+        cell.foodLabel.text = "AI"
         
         
 //        cell.textLabel?.text = testHotel.name
