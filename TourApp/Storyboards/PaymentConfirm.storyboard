@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Payment ConfirmVC-->
         <scene sceneID="kCm-rL-lpo">
             <objects>
-                <viewController id="7A8-uZ-nu9" sceneMemberID="viewController">
+                <viewController id="7A8-uZ-nu9" customClass="PaymentConfirmVC" customModule="TourApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBj-CK-xy2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +41,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="no7-Oz-iTm"/>
                     </view>
+                    <connections>
+                        <outlet property="county" destination="dA3-Jh-3B5" id="4HS-sw-wd6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oj-Ce-jKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
