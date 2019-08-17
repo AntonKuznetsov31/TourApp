@@ -29,7 +29,6 @@ class MainScreenVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return tours.count
     }
     
@@ -40,10 +39,8 @@ class MainScreenVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hotelInfo", for: indexPath) as! MainTableViewCell
         
-        
         let tour = tours[indexPath.row]
         
-
         cell.nameLabel.text = tour.name
         cell.cityLabel.text = tour.city
         cell.countryLabel.text = tour.country

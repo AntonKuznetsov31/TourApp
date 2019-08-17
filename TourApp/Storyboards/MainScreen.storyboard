@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Control-->
+        <!--Интурист-->
         <scene sceneID="mfK-jq-vu0">
             <objects>
                 <tableViewController id="oNC-Ex-LKF" customClass="MainScreenVC" customModule="TourApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                                     <outlet property="imageImageView" destination="dzw-qb-ek6" id="wXd-nB-X8H"/>
                                     <outlet property="nameLabel" destination="7HY-Od-MBn" id="Jc5-r9-o2y"/>
                                     <outlet property="priceLabel" destination="dgZ-ve-A3d" id="8s9-AT-PSM"/>
-                                    <segue destination="2xr-rc-ZAg" kind="show" id="2VA-AG-uIE"/>
+                                    <segue destination="2xr-rc-ZAg" kind="show" id="OJK-Wi-fql"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -107,7 +107,7 @@
                             <outlet property="delegate" destination="oNC-Ex-LKF" id="7Nt-lu-3Fg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Control" id="d4y-NK-dve"/>
+                    <navigationItem key="navigationItem" title="Интурист" id="d4y-NK-dve"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4C-hb-n2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

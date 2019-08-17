@@ -65,10 +65,8 @@ func loadData() -> [Tour] {
              food: "AI",
              image: "CampusHillHotel"
         ),
-        
     ]
-    return tours
+    
+    return tours.shuffled()
 }
-
 }
-
