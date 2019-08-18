@@ -10,44 +10,37 @@ import UIKit
 
 class PaymentConfirmVC: UIViewController {
 
-    @IBOutlet var county: UILabel!
+    @IBOutlet var country: UILabel!
+    @IBOutlet var cityLabel: UILabel!
+    @IBOutlet var hotelLabel: UILabel!
+    @IBOutlet var foodLabel: UILabel!
+    @IBOutlet var DateLabel: UILabel!
+    
+    @IBOutlet var buyButtonLabel: UIButton!
+    
     var tour: Tour!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupVC()
-
-       
+        updateUI()
     }
     
-    func setupVC() {
-     county.text = tour.country
-    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "bookSegue" else { return }
-        
-        let selectedTour = tour
-        let paymentVC = segue.destination as! PaymentConfirmVC
-        
-        paymentVC.tour = selectedTour
+    @IBAction func buyButtonPressed() {
         
     }
     
-
-    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    func updateUI() {
+        buyButtonLabel.titleLabel?.text = "Купить за \(tour.price) руб."
         
+        country.text = tour.country
+        cityLabel.text = tour.city
+        hotelLabel.text = ""
+        foodLabel.text = ""
+        DateLabel.text = ""
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }
