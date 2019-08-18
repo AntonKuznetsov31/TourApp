@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TBd-P0-MPf">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment ConfirmVC-->
+        <scene sceneID="wyG-fn-UvX">
+            <objects>
+                <viewController id="TBd-P0-MPf" customClass="PaymentConfirmVC" customModule="TourApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dj6-Or-ZLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детальная информация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0N-k9-Owc">
+                                <rect key="frame" x="20" y="84" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="J0M-b4-JBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-lM-WRJ">
+                                <rect key="frame" x="20" y="391" width="374" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU9-sh-ZQo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Купить за"/>
+                                        <connections>
+                                            <action selector="buyButtonPressed" destination="TBd-P0-MPf" eventType="touchUpInside" id="nb6-FO-w0J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YGx-pf-hSv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-c1-5Yb">
+                                <rect key="frame" x="20" y="161" width="79" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5Q-DS-ynq">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbo-G6-f8x">
+                                        <rect key="frame" x="0.0" y="55" width="58" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9v-mQ-DXY">
+                                        <rect key="frame" x="0.0" y="110" width="57.5" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-QZ-rCJ">
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eNa-Z8-WOr"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4TZ-77-1Ug">
+                                <rect key="frame" x="297.5" y="161" width="79" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ3-EA-Oy6">
+                                        <rect key="frame" x="11.5" y="0.0" width="67.5" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itj-lh-LId">
+                                        <rect key="frame" x="21" y="55" width="58" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-jN-KfW">
+                                        <rect key="frame" x="21.5" y="110" width="57.5" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iq-7w-rQY">
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="86t-N5-QLx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="eCK-7y-oxz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hKc-lM-WRJ" firstAttribute="leading" secondItem="zF0-6N-ppy" secondAttribute="leading" constant="20" id="0ZP-Ab-jbD"/>
+                            <constraint firstItem="4TZ-77-1Ug" firstAttribute="top" secondItem="r0N-k9-Owc" secondAttribute="bottom" constant="41" id="3a3-Ns-vcQ"/>
+                            <constraint firstItem="r0N-k9-Owc" firstAttribute="top" secondItem="zF0-6N-ppy" secondAttribute="top" constant="40" id="8l2-zA-zaM"/>
+                            <constraint firstItem="zF0-6N-ppy" firstAttribute="trailing" secondItem="r0N-k9-Owc" secondAttribute="trailing" constant="20" id="A9n-QH-zDo"/>
+                            <constraint firstItem="zF0-6N-ppy" firstAttribute="trailing" secondItem="4TZ-77-1Ug" secondAttribute="trailing" constant="37.5" id="AcG-R0-yJx"/>
+                            <constraint firstItem="cZb-c1-5Yb" firstAttribute="top" secondItem="r0N-k9-Owc" secondAttribute="bottom" constant="41" id="G0A-Um-9nC"/>
+                            <constraint firstItem="r0N-k9-Owc" firstAttribute="leading" secondItem="zF0-6N-ppy" secondAttribute="leading" constant="20" id="LRp-CN-PZ5"/>
+                            <constraint firstItem="hKc-lM-WRJ" firstAttribute="top" secondItem="cZb-c1-5Yb" secondAttribute="bottom" constant="30" id="gCY-Ze-bhC"/>
+                            <constraint firstItem="zF0-6N-ppy" firstAttribute="trailing" secondItem="hKc-lM-WRJ" secondAttribute="trailing" constant="20" id="i66-di-YD8"/>
+                            <constraint firstItem="cZb-c1-5Yb" firstAttribute="leading" secondItem="zF0-6N-ppy" secondAttribute="leading" constant="20" id="lEX-T8-Iik"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zF0-6N-ppy"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyButtonLabel" destination="oU9-sh-ZQo" id="kAj-Ih-cLW"/>
+                        <outlet property="cityLabel" destination="Itj-lh-LId" id="51I-J3-ivk"/>
+                        <outlet property="country" destination="tQ3-EA-Oy6" id="coa-GN-JDZ"/>
+                        <outlet property="foodLabel" destination="9Iq-7w-rQY" id="fyL-RW-cp1"/>
+                        <outlet property="hotelLabel" destination="FBa-jN-KfW" id="4Sd-2S-FlT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye1-hc-d7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="161.38392857142856"/>
+        </scene>
+    </scenes>
+</document>
