@@ -44,34 +44,28 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3v8-rh-6IA">
-                                <rect key="frame" x="20.000000000000007" y="161" width="117.66666666666669" height="200"/>
+                                <rect key="frame" x="20" y="161" width="79" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2e-dP-8rS">
-                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-9v-Kg3">
-                                        <rect key="frame" x="0.0" y="44" width="57.666666666666664" height="24"/>
+                                        <rect key="frame" x="0.0" y="55" width="57.666666666666664" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Rb-v0F">
-                                        <rect key="frame" x="0.0" y="88" width="57.333333333333336" height="24"/>
+                                        <rect key="frame" x="0.0" y="110" width="57.333333333333336" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-UC-7j7">
-                                        <rect key="frame" x="0.0" y="132" width="79" height="24"/>
-                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата въезда" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFr-gI-rpa">
-                                        <rect key="frame" x="0.0" y="176" width="117.66666666666667" height="24"/>
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -82,34 +76,28 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SC1-OC-B9B">
-                                <rect key="frame" x="219.99999999999997" y="161" width="117.66666666666666" height="200"/>
+                                <rect key="frame" x="258.66666666666669" y="161" width="79" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyy-Ff-IV4">
-                                        <rect key="frame" x="50.000000000000007" y="0.0" width="67.666666666666686" height="24"/>
+                                        <rect key="frame" x="11.333333333333314" y="0.0" width="67.666666666666671" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO1-ow-MX7">
-                                        <rect key="frame" x="60" y="44" width="57.666666666666657" height="24"/>
+                                        <rect key="frame" x="21.333333333333314" y="55" width="57.666666666666657" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-V5-8Mz">
-                                        <rect key="frame" x="60.333333333333314" y="88" width="57.333333333333343" height="24"/>
+                                        <rect key="frame" x="21.666666666666629" y="110" width="57.333333333333343" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-3Y-fZy">
-                                        <rect key="frame" x="38.666666666666686" y="132" width="79" height="24"/>
-                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата въезда" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-8w-wYu">
-                                        <rect key="frame" x="0.0" y="176" width="117.66666666666667" height="24"/>
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -137,7 +125,6 @@
                         <viewLayoutGuide key="safeArea" id="no7-Oz-iTm"/>
                     </view>
                     <connections>
-                        <outlet property="DateLabel" destination="l7A-8w-wYu" id="OAE-Or-bsT"/>
                         <outlet property="buyButtonLabel" destination="E0a-jg-xs9" id="cNl-eQ-5r7"/>
                         <outlet property="cityLabel" destination="HO1-ow-MX7" id="3dw-F6-j6M"/>
                         <outlet property="country" destination="Yyy-Ff-IV4" id="HDT-xc-c9a"/>

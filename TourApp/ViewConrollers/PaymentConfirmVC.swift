@@ -14,21 +14,24 @@ class PaymentConfirmVC: UIViewController {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var hotelLabel: UILabel!
     @IBOutlet var foodLabel: UILabel!
-    @IBOutlet var DateLabel: UILabel!
     
     @IBOutlet var buyButtonLabel: UIButton!
     
     var tour: Tour!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
-    
     @IBAction func buyButtonPressed() {
-        
+        let alertBuy = UIAlertController(title: "Вы приобрели путевку в отель \(tour.country)",
+                                                   message: "Дата вылета ",
+                                                   preferredStyle: .alert)
+        alertBuy.addAction(UIAlertAction(title: "OK",
+                                                   style: .default,
+                                                   handler: nil))
+        self.present(alertBuy, animated: true, completion: nil)
     }
     
     func updateUI() {
@@ -49,10 +52,6 @@ class PaymentConfirmVC: UIViewController {
         case .uai:
             foodLabel.text = "Ультра всё включено"
         }
-        hotelLabel.text = " "
-        DateLabel.text = " "
+        hotelLabel.text = tour.name
     }
-    
-    
-
 }
