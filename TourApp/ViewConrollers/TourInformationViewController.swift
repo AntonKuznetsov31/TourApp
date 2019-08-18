@@ -9,9 +9,9 @@
 import UIKit
 
 class TourInformationViewController: UIViewController {
-
+    
     // MARK: - IBOutlets
-
+    
     @IBOutlet weak var tourImage: UIImageView!
     @IBOutlet weak var city: UILabel!
     @IBOutlet weak var hotel: UILabel!
@@ -32,7 +32,7 @@ class TourInformationViewController: UIViewController {
         nameSurname.delegate = self
         amountOfPersons.delegate = self
     }
-
+    
     // MARK: - Private Methods
     
     private func updateUI() {
@@ -60,7 +60,11 @@ extension TourInformationViewController: UITextFieldDelegate {
         case 0:
             tourist.nameSurname = enteredText
         case 1:
-            tourist.numberOfPersons = Int(enteredText) ?? 1
+            if let number = Int(enteredText) {
+                tourist.numberOfPersons = number
+                tour.price = tour.price * number
+                updateUI()
+            }
         default:
             return
         }

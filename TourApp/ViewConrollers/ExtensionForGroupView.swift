@@ -15,7 +15,8 @@ extension MainScreenVC {
     }
     
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView,
+                            titleForHeaderInSection section: Int) -> String? {
         let country = groupedTours[section].country
         
         let label = UILabel(frame: CGRect(x: 20, y: 3, width: 300, height: 20))

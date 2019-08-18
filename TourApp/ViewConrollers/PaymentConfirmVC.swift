@@ -14,8 +14,7 @@ class PaymentConfirmVC: UIViewController {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var hotelLabel: UILabel!
     @IBOutlet var foodLabel: UILabel!
-    
-    @IBOutlet var buyButtonLabel: UIButton!
+    @IBOutlet var buy: UIButton!
     
     var tour: Tour!
     var tourist: Tourist!
@@ -26,7 +25,8 @@ class PaymentConfirmVC: UIViewController {
     }
     
     @IBAction func buyButtonPressed() {
-        let alertBuy = UIAlertController(title: "You bought tour in \(tour.country)",
+        let alertBuy = UIAlertController(
+            title: "\(tourist.nameSurname!), you bought tour in \(tour.country)",
             message: "Number of persons: \(tourist.numberOfPersons!)",
             preferredStyle: .alert)
         alertBuy.addAction(UIAlertAction(title: "OK",
@@ -36,25 +36,10 @@ class PaymentConfirmVC: UIViewController {
     }
     
     func updateUI() {
-        buyButtonLabel.titleLabel?.text = "Buy for \(tour.price) RUB"
-        
+        buy.setTitle("Buy for \(tour.price) RUB", for: .normal)
         country.text = tour.country
         cityLabel.text = tour.city
-        
-        /*
-         switch tour.food {
-         case .ai:
-         foodLabel.text = "Всё включено"
-         case .bb:
-         foodLabel.text = "Завтрак"
-         case .hb:
-         foodLabel.text = "Завтрак и ужин"
-         case .ro:
-         foodLabel.text = "Без питания"
-         case .uai:
-         foodLabel.text = "Ультра всё включено"
-         }
-         */
+        foodLabel.text = tour.food
         hotelLabel.text = tour.name
     }
 }

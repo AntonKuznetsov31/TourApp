@@ -126,7 +126,7 @@
                         <viewLayoutGuide key="safeArea" id="zF0-6N-ppy"/>
                     </view>
                     <connections>
-                        <outlet property="buyButtonLabel" destination="oU9-sh-ZQo" id="kAj-Ih-cLW"/>
+                        <outlet property="buy" destination="oU9-sh-ZQo" id="kAj-Ih-cLW"/>
                         <outlet property="cityLabel" destination="Itj-lh-LId" id="51I-J3-ivk"/>
                         <outlet property="country" destination="tQ3-EA-Oy6" id="coa-GN-JDZ"/>
                         <outlet property="foodLabel" destination="9Iq-7w-rQY" id="fyL-RW-cp1"/>

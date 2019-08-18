@@ -13,7 +13,7 @@ struct Tour {
     let name : String
     let country: String
     let city: String
-    let price: Int
+    var price: Int
     let food: String
     let image: String
 }
