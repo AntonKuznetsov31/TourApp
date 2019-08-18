@@ -40,6 +40,7 @@ class PaymentConfirmVC: UIViewController {
         country.text = tour.country
         cityLabel.text = tour.city
         
+        /*
         switch tour.food {
         case .ai:
             foodLabel.text = "Всё включено"
@@ -52,6 +53,7 @@ class PaymentConfirmVC: UIViewController {
         case .uai:
             foodLabel.text = "Ультра всё включено"
         }
+        */
         hotelLabel.text = tour.name
     }
 }
