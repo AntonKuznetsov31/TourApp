@@ -18,6 +18,7 @@ class PaymentConfirmVC: UIViewController {
     @IBOutlet var buyButtonLabel: UIButton!
     
     var tour: Tour!
+    var tourist: Tourist!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,8 @@ class PaymentConfirmVC: UIViewController {
     }
     
     @IBAction func buyButtonPressed() {
-        let alertBuy = UIAlertController(title: "Вы приобрели путевку в отель \(tour.country)",
-            message: "Дата вылета ",
+        let alertBuy = UIAlertController(title: "You bought tour in \(tour.country)",
+            message: "Number of persons: \(tourist.numberOfPersons!)",
             preferredStyle: .alert)
         alertBuy.addAction(UIAlertAction(title: "OK",
                                          style: .default,
@@ -35,7 +36,7 @@ class PaymentConfirmVC: UIViewController {
     }
     
     func updateUI() {
-        buyButtonLabel.titleLabel?.text = "Купить за \(tour.price) руб."
+        buyButtonLabel.titleLabel?.text = "Buy for \(tour.price) RUB"
         
         country.text = tour.country
         cityLabel.text = tour.city

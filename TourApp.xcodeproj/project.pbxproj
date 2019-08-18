@@ -15,6 +15,7 @@
 		DAFA7F72230853D600A1695B /* MakeHotelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA7F71230853D600A1695B /* MakeHotelsList.swift */; };
 		E12748D923095B430062B7D8 /* PaymentConfirm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12748D823095B430062B7D8 /* PaymentConfirm.storyboard */; };
 		E12748DB23095B8A0062B7D8 /* PaymentConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */; };
+		E12748DD23097ECA0062B7D8 /* Tourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12748DC23097ECA0062B7D8 /* Tourist.swift */; };
 		E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D72305C8E50043475A /* AppDelegate.swift */; };
 		E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DE2305C8E70043475A /* Assets.xcassets */; };
 		E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 		DAFA7F71230853D600A1695B /* MakeHotelsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeHotelsList.swift; sourceTree = "<group>"; };
 		E12748D823095B430062B7D8 /* PaymentConfirm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentConfirm.storyboard; sourceTree = "<group>"; };
 		E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmVC.swift; sourceTree = "<group>"; };
+		E12748DC23097ECA0062B7D8 /* Tourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tourist.swift; sourceTree = "<group>"; };
 		E1BBB9D42305C8E50043475A /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BBB9D72305C8E50043475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BBB9DE2305C8E70043475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				DA350B312305CEB000C22029 /* Tour.swift */,
 				4E839DDB2309E3520074289E /* TourGroup.swift */,
+				E12748DC23097ECA0062B7D8 /* Tourist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFA7F72230853D600A1695B /* MakeHotelsList.swift in Sources */,
+				E12748DD23097ECA0062B7D8 /* Tourist.swift in Sources */,
 				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
 				4E839DDE2309E4B40074289E /* ExtensionForGroupView.swift in Sources */,
 				4E839DDC2309E3520074289E /* TourGroup.swift in Sources */,
