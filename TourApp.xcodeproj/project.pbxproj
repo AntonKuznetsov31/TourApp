@@ -109,7 +109,7 @@
 		E1BBB9CB2305C8E50043475A = {
 			isa = PBXGroup;
 			children = (
-				E141962C23071BB800F8E719 /* .gitignore */,
+				E156F56123084E90003EFF53 /* .gitignore */,
 				E1BBB9D62305C8E50043475A /* TourApp */,
 				E1BBB9D52305C8E50043475A /* Products */,
 			);
@@ -194,8 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5E818F23080F2400EDC57F /* PaymentConfirm.storyboard in Resources */,
-				E141962D23071BB800F8E719 /* .gitignore in Resources */,
+				E156F56223084E90003EFF53 /* .gitignore in Resources */,
 				E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */,
 				E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */,
 				E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */,
