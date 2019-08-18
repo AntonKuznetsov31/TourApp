@@ -25,8 +25,9 @@ class PaymentConfirmVC: UIViewController {
     }
     
     @IBAction func buyButtonPressed() {
-        let alertBuy = UIAlertController(title: "Вы приобрели путевку в отель \(tour.country)",
-            message: "Дата вылета ",
+        
+        let alertBuy = UIAlertController(title: "Поздравляем",
+            message: "Вы приобрели путевку в отель\(tour.country)",
             preferredStyle: .alert)
         alertBuy.addAction(UIAlertAction(title: "OK",
                                          style: .default,
@@ -35,25 +36,12 @@ class PaymentConfirmVC: UIViewController {
     }
     
     func updateUI() {
+        
         buyButtonLabel.titleLabel?.text = "Купить за \(tour.price) руб."
         
         country.text = tour.country
         cityLabel.text = tour.city
-        
-        /*
-         switch tour.food {
-         case .ai:
-         foodLabel.text = "Всё включено"
-         case .bb:
-         foodLabel.text = "Завтрак"
-         case .hb:
-         foodLabel.text = "Завтрак и ужин"
-         case .ro:
-         foodLabel.text = "Без питания"
-         case .uai:
-         foodLabel.text = "Ультра всё включено"
-         }
-         */
         hotelLabel.text = tour.name
+        foodLabel.text = tour.food
     }
 }
