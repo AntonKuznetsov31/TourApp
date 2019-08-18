@@ -11,8 +11,9 @@
 		DAFA7F692308299000A1695B /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFA7F682308299000A1695B /* MainScreen.storyboard */; };
 		DAFA7F6B23082CA000A1695B /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */; };
 		DAFA7F72230853D600A1695B /* MakeHotelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA7F71230853D600A1695B /* MakeHotelsList.swift */; };
+		E12748D923095B430062B7D8 /* PaymentConfirm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12748D823095B430062B7D8 /* PaymentConfirm.storyboard */; };
+		E12748DB23095B8A0062B7D8 /* PaymentConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */; };
 		E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D72305C8E50043475A /* AppDelegate.swift */; };
-		E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBB9D92305C8E50043475A /* ViewController.swift */; };
 		E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9DE2305C8E70043475A /* Assets.xcassets */; };
 		E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */; };
 		E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C2E0532306F50400291DFF /* TourInformation.storyboard */; };
@@ -24,9 +25,10 @@
 		DAFA7F682308299000A1695B /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		DAFA7F71230853D600A1695B /* MakeHotelsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeHotelsList.swift; sourceTree = "<group>"; };
+		E12748D823095B430062B7D8 /* PaymentConfirm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentConfirm.storyboard; sourceTree = "<group>"; };
+		E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmVC.swift; sourceTree = "<group>"; };
 		E1BBB9D42305C8E50043475A /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BBB9D72305C8E50043475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1BBB9D92305C8E50043475A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1BBB9DE2305C8E70043475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1BBB9E12305C8E70043475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1BBB9E32305C8E70043475A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,9 +58,9 @@
 		DA350B332305D3A800C22029 /* ViewConrollers */ = {
 			isa = PBXGroup;
 			children = (
-				E1BBB9D92305C8E50043475A /* ViewController.swift */,
-				E1C2E055230700D400291DFF /* TourInformationViewController.swift */,
 				DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */,
+				E1C2E055230700D400291DFF /* TourInformationViewController.swift */,
+				E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */,
 			);
 			path = ViewConrollers;
 			sourceTree = "<group>";
@@ -67,8 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				E1BBB9E02305C8E70043475A /* LaunchScreen.storyboard */,
-				E1C2E0532306F50400291DFF /* TourInformation.storyboard */,
 				DAFA7F682308299000A1695B /* MainScreen.storyboard */,
+				E1C2E0532306F50400291DFF /* TourInformation.storyboard */,
+				E12748D823095B430062B7D8 /* PaymentConfirm.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12748D923095B430062B7D8 /* PaymentConfirm.storyboard in Resources */,
 				E1BBB9E22305C8E70043475A /* LaunchScreen.storyboard in Resources */,
 				E1C2E0542306F50400291DFF /* TourInformation.storyboard in Resources */,
 				E1BBB9DF2305C8E70043475A /* Assets.xcassets in Resources */,
@@ -203,7 +207,7 @@
 				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
 				DAFA7F6B23082CA000A1695B /* MainScreenVC.swift in Sources */,
 				E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */,
-				E1BBB9DA2305C8E50043475A /* ViewController.swift in Sources */,
+				E12748DB23095B8A0062B7D8 /* PaymentConfirmVC.swift in Sources */,
 				E1BBB9D82305C8E50043475A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
