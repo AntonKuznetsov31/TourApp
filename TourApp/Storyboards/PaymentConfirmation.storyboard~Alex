@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7A8-uZ-nu9">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment ConfirmVC-->
+        <scene sceneID="kCm-rL-lpo">
+            <objects>
+                <viewController id="7A8-uZ-nu9" customClass="PaymentConfirmVC" customModule="TourApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBj-CK-xy2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детальная информация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k59-aS-8Ff">
+                                <rect key="frame" x="20" y="84" width="335" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Drl-Pv-Noa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="2nI-Pz-z2H">
+                                <rect key="frame" x="20" y="391" width="335" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0a-jg-xs9">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Купить за"/>
+                                        <connections>
+                                            <action selector="buyButtonPressed" destination="7A8-uZ-nu9" eventType="touchUpInside" id="xp5-Gx-6ts"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="WFD-iQ-52Q"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3v8-rh-6IA">
+                                <rect key="frame" x="20" y="161" width="79" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2e-dP-8rS">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-9v-Kg3">
+                                        <rect key="frame" x="0.0" y="55" width="57.666666666666664" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Rb-v0F">
+                                        <rect key="frame" x="0.0" y="110" width="57.333333333333336" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-UC-7j7">
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Lvw-cc-8ET"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SC1-OC-B9B">
+                                <rect key="frame" x="258.66666666666669" y="161" width="79" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyy-Ff-IV4">
+                                        <rect key="frame" x="11.333333333333314" y="0.0" width="67.666666666666671" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO1-ow-MX7">
+                                        <rect key="frame" x="21.333333333333314" y="55" width="57.666666666666657" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-V5-8Mz">
+                                        <rect key="frame" x="21.666666666666629" y="110" width="57.333333333333343" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-3Y-fZy">
+                                        <rect key="frame" x="0.0" y="165" width="79" height="35"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="4lI-DR-e4k"/>
+                                    <constraint firstAttribute="height" constant="200" id="Yvf-mZ-iOu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="no7-Oz-iTm" firstAttribute="trailing" secondItem="k59-aS-8Ff" secondAttribute="trailing" constant="20" id="82R-1l-J7r"/>
+                            <constraint firstItem="no7-Oz-iTm" firstAttribute="trailing" secondItem="SC1-OC-B9B" secondAttribute="trailing" constant="37.5" id="J1s-pl-jd6"/>
+                            <constraint firstItem="SC1-OC-B9B" firstAttribute="top" secondItem="k59-aS-8Ff" secondAttribute="bottom" constant="41" id="Sbh-uP-aPS"/>
+                            <constraint firstItem="3v8-rh-6IA" firstAttribute="top" secondItem="k59-aS-8Ff" secondAttribute="bottom" constant="41" id="U79-5o-qOw"/>
+                            <constraint firstItem="2nI-Pz-z2H" firstAttribute="leading" secondItem="no7-Oz-iTm" secondAttribute="leading" constant="20" id="ZGz-Sn-aUD"/>
+                            <constraint firstItem="3v8-rh-6IA" firstAttribute="leading" secondItem="no7-Oz-iTm" secondAttribute="leading" constant="20" id="eae-wC-GS9"/>
+                            <constraint firstItem="2nI-Pz-z2H" firstAttribute="top" secondItem="3v8-rh-6IA" secondAttribute="bottom" constant="30" id="iVI-fT-l3R"/>
+                            <constraint firstItem="k59-aS-8Ff" firstAttribute="leading" secondItem="no7-Oz-iTm" secondAttribute="leading" constant="20" id="oWK-ug-bmW"/>
+                            <constraint firstItem="no7-Oz-iTm" firstAttribute="trailing" secondItem="2nI-Pz-z2H" secondAttribute="trailing" constant="20" id="sQA-sU-pMO"/>
+                            <constraint firstItem="k59-aS-8Ff" firstAttribute="top" secondItem="no7-Oz-iTm" secondAttribute="top" constant="40" id="vVg-Tq-Qzr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="no7-Oz-iTm"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyButtonLabel" destination="E0a-jg-xs9" id="cNl-eQ-5r7"/>
+                        <outlet property="cityLabel" destination="HO1-ow-MX7" id="3dw-F6-j6M"/>
+                        <outlet property="country" destination="Yyy-Ff-IV4" id="HDT-xc-c9a"/>
+                        <outlet property="foodLabel" destination="Sw8-3Y-fZy" id="Q9p-Tc-XfM"/>
+                        <outlet property="hotelLabel" destination="UUS-V5-8Mz" id="idU-CC-ueT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9oj-Ce-jKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="161.38392857142856"/>
+        </scene>
+    </scenes>
+</document>
