@@ -49,8 +49,8 @@ class PaymentConfirmVC: UIViewController {
         case .uai:
             foodLabel.text = "Ультра всё включено"
         }
-        hotelLabel.text = ""
-        DateLabel.text = ""
+        hotelLabel.text = " "
+        DateLabel.text = " "
     }
     
     
