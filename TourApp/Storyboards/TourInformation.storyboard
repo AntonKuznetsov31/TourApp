@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-513.04347826086962" y="154.6875"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--PaymentConfirmation-->
         <scene sceneID="Efq-sI-wBu">
             <objects>
-                <viewControllerPlaceholder id="3TC-ka-BMw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="PaymentConfirmation" id="3TC-ka-BMw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFm-Dg-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="27" y="155"/>

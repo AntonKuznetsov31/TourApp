@@ -17,6 +17,14 @@ class TourInformationViewController: UIViewController {
     @IBOutlet weak var hotel: UILabel!
     @IBOutlet weak var food: UILabel!
     @IBOutlet weak var price: UILabel!
+    
+    override func viewDidLoad() {
+        collectionView.delegate = self
+    }
 
+}
+
+extension TourInformationViewController: UICollectionViewDelegate {
+    
 }
 
