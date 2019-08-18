@@ -21,15 +21,19 @@ class MainTableViewCell: UITableViewCell {
 class MainScreenVC: UITableViewController {
     
     var tours: [Tour] = []
-
+    var groupedTours:[TourGroup] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tours = MakeHotelsList.data.loadData()
+        groupedTours = groupByCountry(tours: tours)
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tours.count
+        
+        let numberOf = groupedTours[section]
+        return numberOf.tour.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -39,7 +43,8 @@ class MainScreenVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hotelInfo", for: indexPath) as! MainTableViewCell
         
-        let tour = tours[indexPath.row]
+        let group = groupedTours[indexPath.section]
+        let tour = group.tour[indexPath.row]
         
         cell.nameLabel.text = tour.name
         cell.cityLabel.text = tour.city
@@ -47,7 +52,7 @@ class MainScreenVC: UITableViewController {
         cell.priceLabel.text = String(tour.price)
         cell.foodLabel.text = tour.food
         cell.imageImageView.image = UIImage.init(named: tour.image )
-
+        
         return cell
     }
 
