@@ -18,10 +18,20 @@ class TourInformationViewController: UIViewController {
     @IBOutlet weak var food: UILabel!
     @IBOutlet weak var price: UILabel!
     
+    // MARK: - Public Methods
+    
+    var tour: Tour!
+    
     override func viewDidLoad() {
         collectionView.delegate = self
+        
     }
 
+    
+    func updateUI() {
+        city.text = "\(tour.city), \(tour.country)"
+        hotel.text = tour.name
+    }
 }
 
 extension TourInformationViewController: UICollectionViewDelegate {
