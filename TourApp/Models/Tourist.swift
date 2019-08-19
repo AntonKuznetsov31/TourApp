@@ -9,6 +9,6 @@
 import Foundation
 
 struct Tourist {
-    var nameSurname: String?
+    var fullName: String?
     var numberOfPersons: Int?
 }

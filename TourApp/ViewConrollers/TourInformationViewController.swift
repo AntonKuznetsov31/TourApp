@@ -17,7 +17,7 @@ class TourInformationViewController: UIViewController {
     @IBOutlet weak var hotel: UILabel!
     @IBOutlet weak var food: UILabel!
     @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var amountOfPersons: UITextField!
+    @IBOutlet weak var numberOfPersons: UITextField!
     @IBOutlet weak var nameSurname: UITextField!
     
     // MARK: - Public Properties
@@ -30,7 +30,7 @@ class TourInformationViewController: UIViewController {
     override func viewDidLoad() {
         updateUI()
         nameSurname.delegate = self
-        amountOfPersons.delegate = self
+        numberOfPersons.delegate = self
         addToolbar()
     }
     
@@ -44,22 +44,41 @@ class TourInformationViewController: UIViewController {
         tourImage.image = UIImage(named: tour.image)
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func bookPressed() {
+        if nameSurname.text != "" && numberOfPersons.text != "" {
+            performSegue(withIdentifier: "paymentSegue", sender: self)
+        } else {
+            let alertBuy = UIAlertController(
+                title: "You need to fill all fields",
+                message: "Enter your name and number of persons",
+                preferredStyle: .alert)
+            alertBuy.addAction(UIAlertAction(title: "OK",
+                                             style: .default))
+            present(alertBuy, animated: true)
+        }
+    }
+    
+    
     // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! PaymentConfirmVC
+        let dvc = segue.destination as! PaymentConfirmViewController
         dvc.tourist = tourist
         dvc.tour = tour
     }
 }
 
 // MARK: - Text field delegate
+
 extension TourInformationViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let enteredText = textField.text else { return }
         switch textField.tag {
         case 0:
-            tourist.nameSurname = enteredText
+            tourist.fullName = enteredText
         case 1:
             if let number = Int(enteredText) {
                 tourist.numberOfPersons = number
@@ -74,7 +93,7 @@ extension TourInformationViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == nameSurname {
             textField.resignFirstResponder()
-            amountOfPersons.becomeFirstResponder()
+            numberOfPersons.becomeFirstResponder()
         }
         return true
     }
@@ -102,7 +121,7 @@ extension TourInformationViewController: UITextFieldDelegate {
         
         toolbar.setItems([flexiblespace, doneButton], animated: true)
         
-        amountOfPersons.inputAccessoryView = toolbar
+        numberOfPersons.inputAccessoryView = toolbar
     }
 }
 

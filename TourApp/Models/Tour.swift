@@ -6,10 +6,9 @@
 //  Copyright © 2019 AntonKuznetsov. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Tour {
-    
     let name : String
     let country: String
     let city: String

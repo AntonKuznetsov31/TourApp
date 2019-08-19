@@ -10,6 +10,8 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
@@ -18,9 +20,13 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var imageImageView: UIImageView!
 }
 
-class MainScreenVC: UITableViewController {
+class MainScreenViewController: UITableViewController {
+    
+    // MARK: - Public Properties
     
     var tours: [Tour] = []
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +34,9 @@ class MainScreenVC: UITableViewController {
         tours = MakeHotelsList.data.loadData()
     }
     
+    // MARK: - Table view delegate
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return tours.count
     }
     
@@ -51,10 +58,9 @@ class MainScreenVC: UITableViewController {
         
         return cell
     }
-
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let detailVC = segue.destination as! TourInformationViewController

@@ -61,7 +61,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                 <state key="normal" title="Book"/>
                                 <connections>
-                                    <segue destination="3TC-ka-BMw" kind="show" identifier="bookSegue" id="4S7-60-JBp"/>
+                                    <action selector="bookPressed" destination="QL7-uY-7BS" eventType="touchUpInside" id="xYq-ly-RbQ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your name and surname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPF-Tq-THy">
@@ -114,13 +114,14 @@
                         <viewLayoutGuide key="safeArea" id="daM-Em-Izx"/>
                     </view>
                     <connections>
-                        <outlet property="amountOfPersons" destination="vxe-we-Ivr" id="q4x-78-tD9"/>
                         <outlet property="city" destination="GSH-dx-iIt" id="oVf-mv-pIQ"/>
                         <outlet property="food" destination="tMl-Im-ScX" id="idm-af-RpF"/>
                         <outlet property="hotel" destination="2A6-SH-Xir" id="ZOW-aE-NC5"/>
                         <outlet property="nameSurname" destination="FPF-Tq-THy" id="jFV-YY-J5d"/>
+                        <outlet property="numberOfPersons" destination="vxe-we-Ivr" id="q4x-78-tD9"/>
                         <outlet property="price" destination="LZS-Tj-Rrt" id="PGs-MY-fpC"/>
                         <outlet property="tourImage" destination="k94-QP-0Ah" id="Hdt-Ks-3ab"/>
+                        <segue destination="3TC-ka-BMw" kind="show" identifier="paymentSegue" id="ci5-ol-MDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJt-fP-fWb" userLabel="First Responder" sceneMemberID="firstResponder"/>

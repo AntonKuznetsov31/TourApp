@@ -1,5 +1,5 @@
 //
-//  PaymentConfirmVC.swift
+//  PaymentConfirmViewController.swift
 //  TourApp
 //
 //  Created by Александр Уткин on 17/08/2019.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class PaymentConfirmVC: UIViewController {
+class PaymentConfirmViewController: UIViewController {
+    
+    // MARK: - IBOutlets
     
     @IBOutlet var country: UILabel!
     @IBOutlet var cityLabel: UILabel!
@@ -16,28 +18,37 @@ class PaymentConfirmVC: UIViewController {
     @IBOutlet var foodLabel: UILabel!
     @IBOutlet var buy: UIButton!
     
+    // MARK: - Public Properties
+    
     var tour: Tour!
     var tourist: Tourist!
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
+    // MARK: - IBActions
+    
     @IBAction func buyButtonPressed() {
         let alertBuy = UIAlertController(
-            title: "\(tourist.nameSurname!), you bought tour in \(tour.country)",
+            title: "\(tourist.fullName!), you bought tour in \(tour.country)",
             message: "Number of persons: \(tourist.numberOfPersons!)",
             preferredStyle: .alert)
-        alertBuy.addAction(UIAlertAction(title: "OK",
-                                         style: .default,
-                                         handler:
-                                         {
-                                         action in self.performSegue(withIdentifier: "goToMain",
-                                                                     sender: self)
-                                         }))
+        alertBuy.addAction(UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: {action in
+                self.performSegue(withIdentifier: "goToMain", sender: self)
+        }
+        ))
+        
         self.present(alertBuy, animated: true, completion: nil)
     }
+    
+    // MARK: - Public Methods
     
     func updateUI() {
         buy.setTitle("Buy for \(tour.price) RUB", for: .normal)
