@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E839DDC2309E3520074289E /* TourGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E839DDB2309E3520074289E /* TourGroup.swift */; };
-		4E839DDE2309E4B40074289E /* ExtensionForGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E839DDD2309E4B40074289E /* ExtensionForGroupView.swift */; };
 		DA350B322305CEB000C22029 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA350B312305CEB000C22029 /* Tour.swift */; };
 		DAFA7F692308299000A1695B /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFA7F682308299000A1695B /* MainScreen.storyboard */; };
 		DAFA7F6B23082CA000A1695B /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */; };
@@ -24,8 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E839DDB2309E3520074289E /* TourGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourGroup.swift; sourceTree = "<group>"; };
-		4E839DDD2309E4B40074289E /* ExtensionForGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForGroupView.swift; sourceTree = "<group>"; };
 		DA350B312305CEB000C22029 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		DAFA7F682308299000A1695B /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
@@ -57,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				DA350B312305CEB000C22029 /* Tour.swift */,
-				4E839DDB2309E3520074289E /* TourGroup.swift */,
 				E12748DC23097ECA0062B7D8 /* Tourist.swift */,
 			);
 			path = Models;
@@ -69,7 +64,6 @@
 				DAFA7F6A23082CA000A1695B /* MainScreenVC.swift */,
 				E1C2E055230700D400291DFF /* TourInformationViewController.swift */,
 				E12748DA23095B8A0062B7D8 /* PaymentConfirmVC.swift */,
-				4E839DDD2309E4B40074289E /* ExtensionForGroupView.swift */,
 			);
 			path = ViewConrollers;
 			sourceTree = "<group>";
@@ -215,8 +209,6 @@
 				DAFA7F72230853D600A1695B /* MakeHotelsList.swift in Sources */,
 				E12748DD23097ECA0062B7D8 /* Tourist.swift in Sources */,
 				DA350B322305CEB000C22029 /* Tour.swift in Sources */,
-				4E839DDE2309E4B40074289E /* ExtensionForGroupView.swift in Sources */,
-				4E839DDC2309E3520074289E /* TourGroup.swift in Sources */,
 				DAFA7F6B23082CA000A1695B /* MainScreenVC.swift in Sources */,
 				E1C2E056230700D400291DFF /* TourInformationViewController.swift in Sources */,
 				E12748DB23095B8A0062B7D8 /* PaymentConfirmVC.swift in Sources */,
