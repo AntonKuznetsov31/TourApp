@@ -31,7 +31,11 @@ class PaymentConfirmVC: UIViewController {
             preferredStyle: .alert)
         alertBuy.addAction(UIAlertAction(title: "OK",
                                          style: .default,
-                                         handler: nil))
+                                         handler:
+                                         {
+                                         action in self.performSegue(withIdentifier: "goToMain",
+                                                                     sender: self)
+                                         }))
         self.present(alertBuy, animated: true, completion: nil)
     }
     
