@@ -31,11 +31,12 @@ class TourInformationViewController: UIViewController {
         updateUI()
         nameSurname.delegate = self
         amountOfPersons.delegate = self
+        addToolbar()
     }
     
     // MARK: - Private Methods
     
-    private func updateUI() {
+    @objc private func updateUI() {
         city.text = "\(tour.city), \(tour.country)"
         hotel.text = tour.name
         food.text = tour.food
@@ -80,7 +81,28 @@ extension TourInformationViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        view.endEditing(true)
+        hideKeyboard()
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    func addToolbar() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let flexiblespace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                            target: nil,
+                                            action: nil)
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                         target: self,
+                                         action: #selector(hideKeyboard))
+        
+        toolbar.setItems([flexiblespace, doneButton], animated: true)
+        
+        amountOfPersons.inputAccessoryView = toolbar
     }
 }
 
