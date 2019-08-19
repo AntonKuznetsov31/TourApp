@@ -82,7 +82,7 @@ extension TourInformationViewController: UITextFieldDelegate {
         case 1:
             if let number = Int(enteredText) {
                 tourist.numberOfPersons = number
-                tour.price = tour.price * number
+                tour.price *= number
                 updateUI()
             }
         default:
