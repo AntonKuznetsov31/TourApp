@@ -60,7 +60,6 @@ class TourInformationViewController: UIViewController {
         }
     }
     
-    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -124,5 +123,3 @@ extension TourInformationViewController: UITextFieldDelegate {
         numberOfPersons.inputAccessoryView = toolbar
     }
 }
-
-
