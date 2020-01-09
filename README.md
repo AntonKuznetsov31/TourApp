@@ -10,6 +10,10 @@ Tour App - это простое приложение для подбора и �
 ![Данные](https://github.com/AntonKuznetsov31/TourApp/blob/master/Screeenshots/IMG_2586.png)
 ![Цена](https://github.com/AntonKuznetsov31/TourApp/blob/master/Screeenshots/IMG_2587.png)
 
+Пользователь обязан заполнить все поля
+
+![Поля](https://github.com/AntonKuznetsov31/TourApp/blob/master/Screeenshots/IMG_2590.png)
+
 После подтверждения поездки, пользователю показывается уведомление об успешном бронировании.
 
 ![Детали](https://github.com/AntonKuznetsov31/TourApp/blob/master/Screeenshots/IMG_2588.png)
