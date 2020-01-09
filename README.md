@@ -2,4 +2,4 @@
 =====
 
 Tour App - это приложение для подбора и заказа тура.
-![Список](https://ibb.co/9NCQr39)
+![Список](https://github.com/AntonKuznetsov31/TourApp/blob/master/Screeenshots/IMG_2584.png)
